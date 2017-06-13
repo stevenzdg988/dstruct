@@ -1,1 +1,50 @@
 ###The file test!!!###
+
+The Git Github:
+
+On the windows:
+
+1、安装git
+Download address:https://git-scm.com/downloads
+
+versions:2.13.1
+
+2、创建本库，可以与GitHub关联
+
+git clone https://github.com/***.git
+也可手动初始化：
+git init
+
+然后在GitHub上创建版本库：
+
+
+Create New Repo,创建版本库（知识库）repository，勾选Initialize this repository with a readme。
+
+3、配置git
+
+创建ssh key
+
+ssh-keygen -t ras -C "your_email@youremail.com"
+
+
+将id_ras.pub中的秘钥复制到GitHub的ssh上，ssh_ras起始，电子邮箱地址前为止的公钥。
+
+ACCOUNT->SETTING->ADD SSH->COPY->SUBMIT.
+
+验证：ssh -T git@github.com
+
+看提示出现success字样就OK了。
+
+4、上传到GitHub
+
+git config --global user.name "your name" //github user name
+git cinfig --global user.email "your email@youremail.com" //sign in the email.
+
+
+
+修改：
+git init
+git add .
+git commit -m 'initial commit'
+git remote add origin git@github.com/stevenzdg988/dstruct.git
+git push origin master`
