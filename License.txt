@@ -44,7 +44,7 @@ git cinfig --global user.email "your email@youremail.com" //sign in the email.
 
 修改：
 git init
-git add .
+git add .   //添加多个文件、文件夹，加上 -A option
 git commit -m 'initial commit'
 git remote add origin git@github.com/stevenzdg988/dstruct.git
 git push origin master
@@ -54,4 +54,6 @@ On the linux:
 The same as in the windows,The command is same.
 
 The Git is the cooperation software,it is very good.
+
+
 
